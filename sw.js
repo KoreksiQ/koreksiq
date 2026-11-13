@@ -1,4 +1,4 @@
-const C = 'kgm-v2';
+const C = 'kgm-v3';
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(C).then(c => c.addAll(['./', './index.html'])).then(() => self.skipWaiting()));
 });
